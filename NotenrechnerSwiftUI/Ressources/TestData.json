@@ -1,0 +1,118 @@
+[
+    {
+        "id": 1,
+        "unitName": "Grundlegende Konzepte der IT",
+        "credits": 5,
+        "unitComponents": [
+            {
+                "id": 1,
+                "componentName": "Grundlagen der IT",
+                "grade": 1.9,
+                "examDate": "2020-01-01T15:00:00+01:00",
+                "examType": "Klausur",
+                "semester": 1,
+                "isGraded": true
+            },
+            {
+                "id": 2,
+                "componentName": "Kommunikations- und Betriebssysteme",
+                "grade": 1.9,
+                "examDate": "2020-01-01T15:00:00+01:00",
+                "examType": "Klausur",
+                "semester": 2,
+                "isGraded": true
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "unitName": "Programmierung I",
+        "credits": 5,
+        "unitComponents": [
+            {
+                "id": 1,
+                "componentName": "Einführung in die Programmierung",
+                "grade": 1.4,
+                "examDate": "2020-01-01T15:00:00+01:00",
+                "examType": "Klausur",
+                "semester": 1,
+                "isGraded": true
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "unitName": "Programmierung II",
+        "credits": 5,
+        "unitComponents": [
+            {
+                "id": 1,
+                "componentName": "Algorithmen und Datenstrukturen",
+                "grade": 1.4,
+                "examDate": "2020-01-01T15:00:00+01:00",
+                "examType": "Klausur",
+                "semester": 2,
+                "isGraded": true
+            },
+            {
+                "id": 2,
+                "componentName": "Fortgeschrittene Programmierung",
+                "grade": 1.4,
+                "examDate": "2020-01-01T15:00:00+01:00",
+                "examType": "Klausur",
+                "semester": 2,
+                "isGraded": true
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "unitName": "Datenbanken",
+        "credits": 5,
+        "unitComponents": [
+            {
+                "id": 1,
+                "componentName": "Datenbanken I",
+                "grade": 1.1,
+                "examDate": "2020-01-01T15:00:00+01:00",
+                "examType": "Klausur",
+                "semester": 3,
+                "isGraded": true
+            },
+            {
+                "id": 2,
+                "componentName": "Datenbanken II",
+                "grade": 1.1,
+                "examDate": "2020-01-01T15:00:00+01:00",
+                "examType": "Klausur",
+                "semester": 3,
+                "isGraded": true
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "unitName": "Webentwicklung",
+        "credits": 5,
+        "unitComponents": [
+            {
+                "id": 1,
+                "componentName": "Verteilte Systeme",
+                "grade": 5.0,
+                "examDate": "2020-01-01T15:00:00+01:00",
+                "examType": "Klausur",
+                "semester": 3,
+                "isGraded": true
+            },
+            {
+                "id": 2,
+                "componentName": "Webentwicklung",
+                "grade": 4.3,
+                "examDate": "2020-01-01T15:00:00+01:00",
+                "examType": "Klausur",
+                "semester": 4,
+                "isGraded": true
+            }
+        ]
+    }
+]
