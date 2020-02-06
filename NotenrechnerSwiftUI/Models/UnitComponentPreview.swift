@@ -10,10 +10,11 @@ import SwiftUI
 
 struct UnitComponentPreview {
     var id : UUID = UUID()
-    var componentName: String = "N/A"
+    var componentName: String = ""
     var grade: Double = 0
     var examDate: Date = Date()
-    var examType: String = "N/A"
+    var examType: String = ""
     var semester: Int = 0
     var isGraded: Bool = false
+    var percentageGrade: Double = 50
 }

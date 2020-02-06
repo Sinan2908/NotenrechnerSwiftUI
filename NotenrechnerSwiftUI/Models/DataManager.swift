@@ -16,6 +16,14 @@ class DataManager: ObservableObject {
     // Array for all units
     @Published var units: [Unit] = Array()
     
+    // Array for Semester-Picker
+    var semester: [Int] = [1, 2, 3, 4, 5, 6]
+    
+    // Array for ExamType-Picker
+    var examType: [String] = ["Klausur", "Hausarbeit", "Mündliche Prüfung", "Projekt"]
+    
+    
+    @Published var unitComponentPreviews: [UnitComponentPreview] = Array<UnitComponentPreview>()
     
     @Published var unitsFrom1stYear: [Unit] = Array()
     @Published var unitsFrom2ndYear: [Unit] = Array()

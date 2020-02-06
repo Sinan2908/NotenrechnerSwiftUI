@@ -118,7 +118,7 @@ struct AddUnitButton: View {
                 .frame(width: 30, height: 30)
         }.padding()
             .sheet(isPresented: $addUnit){
-                CreateUnitView()
+                CreateUnitView().environmentObject(self.myDataManager)
         }
     }
 }

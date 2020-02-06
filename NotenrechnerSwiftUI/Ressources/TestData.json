@@ -11,7 +11,8 @@
                 "examDate": "2020-01-01T15:00:00+01:00",
                 "examType": "Klausur",
                 "semester": 1,
-                "isGraded": true
+                "isGraded": true,
+                "percentageGrade": 50.0
             },
             {
                 "id": 2,
@@ -20,7 +21,8 @@
                 "examDate": "2020-01-01T15:00:00+01:00",
                 "examType": "Klausur",
                 "semester": 2,
-                "isGraded": true
+                "isGraded": true,
+                "percentageGrade": 50.0
             }
         ]
     },
@@ -36,7 +38,8 @@
                 "examDate": "2020-01-01T15:00:00+01:00",
                 "examType": "Klausur",
                 "semester": 1,
-                "isGraded": true
+                "isGraded": true,
+                "percentageGrade": 50.0
             }
         ]
     },
@@ -52,7 +55,8 @@
                 "examDate": "2020-01-01T15:00:00+01:00",
                 "examType": "Klausur",
                 "semester": 2,
-                "isGraded": true
+                "isGraded": true,
+                "percentageGrade": 50.0
             },
             {
                 "id": 2,
@@ -61,7 +65,8 @@
                 "examDate": "2020-01-01T15:00:00+01:00",
                 "examType": "Klausur",
                 "semester": 2,
-                "isGraded": true
+                "isGraded": true,
+                "percentageGrade": 50.0
             }
         ]
     },
@@ -77,7 +82,8 @@
                 "examDate": "2020-01-01T15:00:00+01:00",
                 "examType": "Klausur",
                 "semester": 3,
-                "isGraded": true
+                "isGraded": true,
+                "percentageGrade": 50.0
             },
             {
                 "id": 2,
@@ -86,7 +92,8 @@
                 "examDate": "2020-01-01T15:00:00+01:00",
                 "examType": "Klausur",
                 "semester": 3,
-                "isGraded": true
+                "isGraded": true,
+                "percentageGrade": 50.0
             }
         ]
     },
@@ -102,7 +109,8 @@
                 "examDate": "2020-01-01T15:00:00+01:00",
                 "examType": "Klausur",
                 "semester": 3,
-                "isGraded": true
+                "isGraded": true,
+                "percentageGrade": 50.0
             },
             {
                 "id": 2,
@@ -111,7 +119,8 @@
                 "examDate": "2020-01-01T15:00:00+01:00",
                 "examType": "Klausur",
                 "semester": 4,
-                "isGraded": true
+                "isGraded": true,
+                "percentageGrade": 50.0
             }
         ]
     }

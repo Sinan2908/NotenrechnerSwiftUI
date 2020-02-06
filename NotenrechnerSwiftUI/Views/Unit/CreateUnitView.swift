@@ -10,27 +10,27 @@ import SwiftUI
 
 struct CreateUnitView: View {
     @EnvironmentObject var myDataManager : DataManager
-    
+        
     @State private var unitName: String = ""
     @State private var credits: Int = 5
     
     @State private var isAdded: Bool = false
     
-    
-    @State private var unitComponents : [UnitComponentPreview] = Array()
-    
     var unitComponentName: String = ""
+    
+     @State private var unitComponents : [UnitComponentPreview] = Array()
     
     var body: some View {
         GeometryReader{ geometry in
             ScrollView{
-                VStack{
+                VStack(alignment: .leading){
                     Text("Modul erstellen")
                         .font(.largeTitle)
                     HStack{
                         Text("Modulbezeichnung: ")
                             .frame(width: geometry.size.width / 2.4, alignment: .leading)
-                        TextField("", text: self.$unitName) .textFieldStyle(RoundedBorderTextFieldStyle())
+                        TextField("", text: self.$unitName)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
                     }.frame(height: 70)
                     HStack{
                         Text("ECTS:")
@@ -40,6 +40,11 @@ struct CreateUnitView: View {
                     VStack(alignment: .leading){
                         Text("Kurse")
                             .font(.title)
+                        Divider().frame(width: 100, alignment: .leading)
+                        
+                        ForEach(self.unitComponents, id: \.id) {component in
+                            CreateUnitComponent(unitComponent: component)
+                        }
                         Button(action: {
                             withAnimation(.easeInOut){
                                 self.unitComponents.append(UnitComponentPreview())
@@ -49,10 +54,6 @@ struct CreateUnitView: View {
                                 .resizable()
                                 .frame(width: 30, height: 30)
                                 .foregroundColor(Color.green)
-                        }
-                        
-                        ForEach(self.unitComponents, id: \.id) {component in
-                            CreateUnitComponent(unitComponent: component)
                         }
                         
                     }

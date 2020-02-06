@@ -16,4 +16,5 @@ struct UnitComponent: Codable, Identifiable {
     var examType: String
     var semester: Int
     var isGraded: Bool
+    var percentageGrade: Double
 }
