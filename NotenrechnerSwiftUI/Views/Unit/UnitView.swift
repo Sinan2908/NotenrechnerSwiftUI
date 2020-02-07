@@ -15,13 +15,13 @@ struct UnitView: View {
     }
 }
 
-struct UnitView_Previews: PreviewProvider {
-    static var previews: some View {
-        UnitView(unit:
-            Unit(id: 0, unitName: "Test", credits: 5.0, unitComponents:[
-                UnitComponent(id: 1, componentName: "test", grade: 1.5, examDate: Date(), examType: "Klausur", semester: 1, isGraded: true, percentageGrade: 50),
-                UnitComponent(id: 2, componentName: "test", grade: 3.2, examDate: Date(), examType: "Klausur", semester: 1, isGraded: true, percentageGrade: 50)
-                ]
-        ))
-    }
-}
+//struct UnitView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        UnitView(unit:
+//            Unit( unitName: "Test", credits: 5.0, unitComponents:[
+//                UnitComponent(componentName: "test", grade: 1.5, examDate: Date(), examType: "Klausur", semester: 1, isGraded: true, percentageGrade: 50),
+//                UnitComponent(componentName: "test", grade: 3.2, examDate: Date(), examType: "Klausur", semester: 1, isGraded: true, percentageGrade: 50)
+//                ]
+//        ))
+//    }
+//}

@@ -9,10 +9,13 @@
 import SwiftUI
 
 struct Unit: Codable, Identifiable {
-    var id: Int
+    var id : Int
     var unitName: String
     
     var finalGrade : Double {
+        if unitComponents.isEmpty {
+            return 4.0
+        }
         var average : Double = 0
         for component in unitComponents {
             average += component.grade
@@ -46,4 +49,10 @@ struct Unit: Codable, Identifiable {
     }
     
     var unitComponents: [UnitComponent]
+    
+    mutating func addUnitComponent(component: UnitComponent){
+        self.unitComponents.append(component)
+    }
+    
+    
 }

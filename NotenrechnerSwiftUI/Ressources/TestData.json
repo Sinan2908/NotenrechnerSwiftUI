@@ -9,7 +9,7 @@
                 "componentName": "Grundlagen der IT",
                 "grade": 1.9,
                 "examDate": "2020-01-01T15:00:00+01:00",
-                "examType": "Klausur",
+                "examType": 1,
                 "semester": 1,
                 "isGraded": true,
                 "percentageGrade": 50.0
@@ -19,7 +19,7 @@
                 "componentName": "Kommunikations- und Betriebssysteme",
                 "grade": 1.9,
                 "examDate": "2020-01-01T15:00:00+01:00",
-                "examType": "Klausur",
+                "examType": 1,
                 "semester": 2,
                 "isGraded": true,
                 "percentageGrade": 50.0
@@ -36,7 +36,7 @@
                 "componentName": "Einführung in die Programmierung",
                 "grade": 1.4,
                 "examDate": "2020-01-01T15:00:00+01:00",
-                "examType": "Klausur",
+                "examType": 1,
                 "semester": 1,
                 "isGraded": true,
                 "percentageGrade": 50.0
@@ -53,7 +53,7 @@
                 "componentName": "Algorithmen und Datenstrukturen",
                 "grade": 1.4,
                 "examDate": "2020-01-01T15:00:00+01:00",
-                "examType": "Klausur",
+                "examType": 1,
                 "semester": 2,
                 "isGraded": true,
                 "percentageGrade": 50.0
@@ -63,7 +63,7 @@
                 "componentName": "Fortgeschrittene Programmierung",
                 "grade": 1.4,
                 "examDate": "2020-01-01T15:00:00+01:00",
-                "examType": "Klausur",
+                "examType": 1,
                 "semester": 2,
                 "isGraded": true,
                 "percentageGrade": 50.0
@@ -80,7 +80,7 @@
                 "componentName": "Datenbanken I",
                 "grade": 1.1,
                 "examDate": "2020-01-01T15:00:00+01:00",
-                "examType": "Klausur",
+                "examType": 1,
                 "semester": 3,
                 "isGraded": true,
                 "percentageGrade": 50.0
@@ -90,7 +90,7 @@
                 "componentName": "Datenbanken II",
                 "grade": 1.1,
                 "examDate": "2020-01-01T15:00:00+01:00",
-                "examType": "Klausur",
+                "examType": 1,
                 "semester": 3,
                 "isGraded": true,
                 "percentageGrade": 50.0
@@ -107,7 +107,7 @@
                 "componentName": "Verteilte Systeme",
                 "grade": 5.0,
                 "examDate": "2020-01-01T15:00:00+01:00",
-                "examType": "Klausur",
+                "examType": 1,
                 "semester": 3,
                 "isGraded": true,
                 "percentageGrade": 50.0
@@ -117,7 +117,7 @@
                 "componentName": "Webentwicklung",
                 "grade": 4.3,
                 "examDate": "2020-01-01T15:00:00+01:00",
-                "examType": "Klausur",
+                "examType": 1,
                 "semester": 4,
                 "isGraded": true,
                 "percentageGrade": 50.0

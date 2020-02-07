@@ -9,11 +9,11 @@
 import SwiftUI
 
 struct UnitComponent: Codable, Identifiable {
-    var id: Int
+    var id : Int
     var componentName: String
     var grade: Double
     var examDate: Date
-    var examType: String
+    var examType: Int
     var semester: Int
     var isGraded: Bool
     var percentageGrade: Double

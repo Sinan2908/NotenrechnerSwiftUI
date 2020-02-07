@@ -3,4 +3,54 @@
    uuid = "8486C922-DDC0-4FDA-A369-6FF38C128C3B"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5751EDB0-7946-49F2-9A1F-4FE928E94146"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NotenrechnerSwiftUI/Views/Unit/CreateUnitComponent.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "5751EDB0-7946-49F2-9A1F-4FE928E94146 - c8be94e907ec281c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.textFieldStyle&lt;A where A1: SwiftUI.TextFieldStyle&gt;(A1) -&gt; some&gt;&gt;.0)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, Notenrechner_SwiftUI.CheckBox)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.labelsHidden() -&gt; some&gt;&gt;.0)&gt;&gt;&gt;, SwiftUI.Text, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.labelsHidden() -&gt; some&gt;&gt;.0, SwiftUI.Text, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.labelsHidden() -&gt; some&gt;&gt;.0, Swift.Optional&lt;SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.layoutPriority(Swift.Double) -&gt; some&gt;&gt;.0, SwiftUI.Slider&lt;SwiftUI.EmptyView, SwiftUI.EmptyView&gt;, SwiftUI.Text)&gt;&gt;&gt;, SwiftUI.Divider)&gt; in Notenrechner_SwiftUI.CreateUnitComponent.body.getter : some"
+                  moduleName = "Notenrechner SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/d073575/Desktop/ProjektarbeitCoding/NotenrechnerSwiftUI/NotenrechnerSwiftUI/Views/Unit/CreateUnitComponent.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "4004">
+               </Location>
+               <Location
+                  uuid = "5751EDB0-7946-49F2-9A1F-4FE928E94146 - 9a8e9dbee78eac09"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #5 () -&gt; SwiftUI.ForEach&lt;Swift.Range&lt;Swift.Int&gt;, Swift.Int, SwiftUI.Text&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.textFieldStyle&lt;A where A1: SwiftUI.TextFieldStyle&gt;(A1) -&gt; some&gt;&gt;.0)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, Notenrechner_SwiftUI.CheckBox)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.labelsHidden() -&gt; some&gt;&gt;.0)&gt;&gt;&gt;, SwiftUI.Text, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.labelsHidden() -&gt; some&gt;&gt;.0, SwiftUI.Text, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.labelsHidden() -&gt; some&gt;&gt;.0, Swift.Optional&lt;SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.layoutPriority(Swift.Double) -&gt; some&gt;&gt;.0, SwiftUI.Slider&lt;SwiftUI.EmptyView, SwiftUI.EmptyView&gt;, SwiftUI.Text)&gt;&gt;&gt;, SwiftUI.Divider)&gt; in Notenrechner_SwiftUI.CreateUnitComponent.body.getter : some"
+                  moduleName = "Notenrechner SwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/d073575/Desktop/ProjektarbeitCoding/NotenrechnerSwiftUI/NotenrechnerSwiftUI/Views/Unit/CreateUnitComponent.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

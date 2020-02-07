@@ -10,61 +10,65 @@ import SwiftUI
 
 struct CreateUnitComponent: View {
     @EnvironmentObject var myDataManager: DataManager
-    @State var unitComponent: UnitComponentPreview
+    var component: UnitComponent
+    var componentIndex: Int {
+        return myDataManager.newUnit.unitComponents.firstIndex(where: {$0.id == component.id})!
+    }
     
-    @State private var selectedSemester: Int = 1
+    // 7776000s = 90d
+    let NintyDaysInPast: Date = Date().addingTimeInterval(-7776000)
+    let NintyDaysInFuture: Date =  Date().addingTimeInterval(7776000)
     
-    @State private var percentageGrade: Double = 50
-    @State private var selectedExamType: String = ""
     
-    @State private var examDate = Date()
     
     
     var body: some View {
         VStack(alignment: .leading){
-            Text("\(unitComponent.componentName)").font(.title)
+            Text("\(myDataManager.newUnit.unitComponents[componentIndex].componentName)").font(.title)
             HStack{
                 Text("Kursname: ")
-                TextField("", text: self.$unitComponent.componentName)
+                TextField("", text: $myDataManager.newUnit.unitComponents[componentIndex].componentName)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
             }
             HStack(alignment: .firstTextBaseline){
                 Text("Benotet: ")
-                CheckBox(isChecked: self.$unitComponent.isGraded)
+                CheckBox(isChecked: $myDataManager.newUnit.unitComponents[componentIndex].isGraded)
             }
             HStack{
                 VStack(alignment: .leading){
                     Text("Prüfungsform: ")
-                    Picker(selection: self.$unitComponent.examType, label: Text("")){
-                        ForEach(0 ..< self.myDataManager.examType.count){
-                            Text("\(self.myDataManager.examType[$0])")
+                    Picker(selection: self.$myDataManager.newUnit.unitComponents[componentIndex].examType, label: Text("")){
+                        ForEach(0..<self.myDataManager.examType.count){
+                            Text(self.myDataManager.examType[$0])
                         }
                     }.pickerStyle(WheelPickerStyle())
                         .labelsHidden()
-                        .frame(height:150)
                 }
+                
             }
             
             Text("Prüfungsdatum: ")
-            DatePicker(selection: $examDate, in: Date()..., displayedComponents: .date) {
+            DatePicker(selection: $myDataManager.newUnit.unitComponents[componentIndex].examDate, in: NintyDaysInPast...NintyDaysInFuture, displayedComponents: [.date, .hourAndMinute ]) {
                 Text("")
             }.labelsHidden()
             
             
             
             Text("Semester: ")
-            Picker(selection: self.$unitComponent.semester, label: Text("")){
+            
+            
+            Picker(selection: self.$myDataManager.newUnit.unitComponents[componentIndex].semester, label: Text("")){
                 ForEach(0 ..< self.myDataManager.semester.count){
                     Text("\(self.myDataManager.semester[$0])")
                 }
             }.pickerStyle(SegmentedPickerStyle())
                 .labelsHidden()
             
-            if self.unitComponent.isGraded {
+            if  self.myDataManager.newUnit.unitComponents[componentIndex].isGraded {
                 HStack{
                     Text("Anteil Gesamtnote: ").layoutPriority(100)
-                    Slider(value: self.$unitComponent.percentageGrade, in: 0...100, step: 1)
-                    Text("\(String(self.unitComponent.percentageGrade))%")
+                    Slider(value: self.$myDataManager.newUnit.unitComponents[componentIndex].percentageGrade, in: 0...100, step: 1)
+                    Text("\(String(self.myDataManager.newUnit.unitComponents[componentIndex].percentageGrade))%")
                 }
             }
             

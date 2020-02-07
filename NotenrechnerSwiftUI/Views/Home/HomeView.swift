@@ -111,6 +111,7 @@ struct AddUnitButton: View {
     
     var body: some View {
         Button(action: {
+            self.myDataManager.newUnit = Unit(id: self.myDataManager.units.count + 1, unitName: "", credits: 5, unitComponents: Array())
             self.addUnit = true
         }){
             Image(systemName: "plus.circle.fill")
@@ -118,7 +119,7 @@ struct AddUnitButton: View {
                 .frame(width: 30, height: 30)
         }.padding()
             .sheet(isPresented: $addUnit){
-                CreateUnitView().environmentObject(self.myDataManager)
+                CreateUnitView(addUnit: self.$addUnit).environmentObject(self.myDataManager)
         }
     }
 }

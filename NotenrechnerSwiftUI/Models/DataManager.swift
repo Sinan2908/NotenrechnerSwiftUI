@@ -16,6 +16,12 @@ class DataManager: ObservableObject {
     // Array for all units
     @Published var units: [Unit] = Array()
     
+    var unitIndex: Int {
+        return units.count
+    }
+    
+    @Published var newUnit : Unit = Unit(id: 0, unitName: "", credits: 5, unitComponents: Array())
+    
     // Array for Semester-Picker
     var semester: [Int] = [1, 2, 3, 4, 5, 6]
     
@@ -45,7 +51,9 @@ class DataManager: ObservableObject {
     var credits: Double {
         var total: Double = 0
         for unit in units {
-            total += unit.credits
+            if unit.isPassed {
+                total += unit.credits
+            }
         }
         
         return total
@@ -62,7 +70,9 @@ class DataManager: ObservableObject {
     func yearCredits(units: [Unit]) -> Double{
         var total: Double = 0
         for unit in units {
-            total += unit.credits
+            if unit.isPassed {
+                total += unit.credits
+            }
         }
         return total
     }
@@ -108,5 +118,6 @@ class DataManager: ObservableObject {
             fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
         }
     }
+    
     
 }
